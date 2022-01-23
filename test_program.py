@@ -1,19 +1,28 @@
 import unittest
+import program
 
 class TestHelloWorld(unittest.TestCase):
+    def setUp(self):
+        # Przygotowanie testu
+        # Stworzenie obiektu klasy Hello()
+        self.prog = program.Hello()
+
     # Metody testowe
     # Zaczynają się od słowa "test"
-    def test001(self):
-        print('Prawdziwy test: kroki, asercje')
+    def test_welcome(self):
+        # Sprawdzamy, czy metoda welcome()
+        # Zwraca napis "hello, world"
+        expected = "hello, world"
+        actual = self.prog.welcome()
+        # Porównuję expected z actual
 
-    def test002(self):
-        print("Prawdziwy test2")
+        # "Czysty" Python
+        # assert expected == actual
+        # Bardziej unittestowa metoda
+        self.assertEqual(expected, actual)
 
     def tearDown(self):
-        print("Sprzątanie po teście")
-
-    def setUp(self):
-        print("Przygotowuję test (warunki wstępne)")
+        del self.prog
 
 # Jeśli uruchamiam z tego pliku
 if __name__ == '__main__':
