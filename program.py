@@ -1,5 +1,5 @@
-class Hello:
-    def welcome(self):
-        # Ta metoda zwróci napis "hello, world"
-        return "hello, world"
-
+class Customer:
+    def __init__(self, name, surname, age):
+        self.name = name
+        self.surname = surname
+        self.age = age

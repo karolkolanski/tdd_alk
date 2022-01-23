@@ -1,0 +1,6 @@
+User story:
+As a shop clerk, I would like to check customers age, to know if I can sell him beer.
+
+Acceptance criteria:
+1. This mechanism should be a part of Customer class
+2. Method is_adult() should return true if adult, false otherwise
