@@ -15,7 +15,8 @@ class TestCustomer(unittest.TestCase):
         customer18 = Customer("Anna", "Black", 18)
         self.assertEqual(True, customer18.is_adult())
         # Stworzyć instancję klienta pełnoletniego 19
-        # sprawdzic is_adult() na kazdej instancji
+        customer19 = Customer("Barbara", "Streisland", 19)
+        self.assertEqual(True, customer19)
 
 if __name__ == "__main__":
     unittest.main()
