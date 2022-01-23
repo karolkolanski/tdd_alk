@@ -1,4 +1,5 @@
 class Hello:
     def welcome(self):
-        # Ta moetod zawróci napis "hello world"
-        pass
+        # Ta metoda zwróci napis "hello, world"
+        return "hello, world"
+

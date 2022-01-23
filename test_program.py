@@ -11,7 +11,7 @@ class TestHelloWorld(unittest.TestCase):
     # Zaczynają się od słowa "test"
     def test_welcome(self):
         # Sprawdzamy, czy metoda welcome()
-        # Zwraca napis "hello, world"
+        # zwraca napis "hello, world"
         expected = "hello, world"
         actual = self.prog.welcome()
         # Porównuję expected z actual
